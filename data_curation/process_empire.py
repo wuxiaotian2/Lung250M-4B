@@ -54,5 +54,5 @@ for i in trange(12):
         if((i==2)|(i==8)):
             folder = 'imagesTs'
 
-            nib.save(nib.Nifti1Image(img_2.numpy(),None,header=hdr),base+'../'+folder+'/case_'+str(int(i)).zfill(3)+'_'+str(phase+1)+'.nii.gz')
+        nib.save(nib.Nifti1Image(img_2.numpy(),None,header=hdr),base+'../'+folder+'/case_'+str(int(i)).zfill(3)+'_'+str(phase+1)+'.nii.gz')
         
